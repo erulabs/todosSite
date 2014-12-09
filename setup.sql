@@ -7,6 +7,7 @@ CREATE TABLE `todosDB`.`todos` (
 	`id` int(11) NOT NULL auto_increment,
 	`task` TEXT,
 	`dateAdded` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	`dateCompleted` DEFAULT NULL,
-	`priority` SET('low', 'medium', 'high')
-primary KEY (id));
+	`dateCompleted` DATETIME DEFAULT NULL,
+	`priority` SET('low', 'medium', 'high'),
+	primary KEY (id)
+);
